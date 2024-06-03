@@ -1,0 +1,53 @@
+body {
+    padding: 0 2.5% 0 2.5%;
+}
+
+.card {
+    width: calc(33.33% - 12px); /* Three cards per row with spacing */
+    height: 500px;
+    float: left; /* Ensure cards flow horizontally */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    padding: 0 3% 0 3%;
+}
+
+
+
+
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Set width to 100% for smaller screens */
+        padding: 0 3% 0 3%;
+        margin-left: 0; /* Remove left margin for screens smaller than 768px */
+        justify-items: center;
+    }
+}
+
+/* Media query for screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        width: calc(45.5% - 12px); /* Approximately two cards per row */
+        padding: 0 3% 0 3%;
+        justify-items: center;
+        /* Add left margin for screens between 768px and 1024px */
+    }
+}
+
+.button-container {
+    margin-left: 30rem !important;
+    margin-right: 18rem !important;
+    display:inline-flex;
+    justify-content: space-between;
+}
+
+.prev {
+    margin-right: auto !important; /* Pushes the "prev" button to the left */
+    
+}
+
+.next {
+    margin-left: auto !important; /* Pushes the "next" button to the right */
+    
+}
